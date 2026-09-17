@@ -1,0 +1,2 @@
+import React from 'react';
+export function IdentityAside(){return (<aside className="identity" aria-label="Apresentação"><div className="identity-main"><h1><span>EDUARDA</span><span>SARAIVA</span></h1><div className="accent" aria-hidden="true"></div><p className="descriptor">Economia,<br />Análise e Dados</p></div><div className="portrait"><img src="assets/eduarda-portrait.png" alt="Retrato de Eduarda Saraiva em preto e branco." width="1024" height="1536" fetchPriority="high" /></div><small className="copyright">© 2026 Eduarda Saraiva</small></aside>);}

@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-paper: #f8f6ec;
+    --text-ink: #191919;
+    --green-accent: #236a47;
+    --green-chart: #3cb371;
+    --border-color: #191919;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-paper);
+    color: var(--text-ink);
+  }
+
+  body {
+    background-color: #f8f6ec;
+    color: #191919;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.font-syne {
+  font-family: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-mono-custom {
+  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+}
+
+/* Custom scrollbar matching paper and ink aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f8f6ec;
+}
+::-webkit-scrollbar-thumb {
+  background: #191919;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #236a47;
+}
+
+/* Details summary styling */
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Print and selection */
+::selection {
+  background-color: #236a47;
+  color: #ffffff;
+}
+
+/* Preserve the approved identity panel and independent right-hand scroll. */
+.portfolio-shell{height:100dvh;min-height:0}
+.portfolio-shell>header{height:80px;flex:none;display:flex;align-items:center}
+.portfolio-shell>header>div{width:100%}
+.layout{height:calc(100dvh - 80px);display:grid;grid-template-columns:43% 57%;min-height:0}
+.layout>main{overflow-y:auto;scroll-behavior:smooth;min-height:0;scrollbar-width:thin}
+.identity{position:relative;border-right:1.5px solid #191919;padding:0 24px 24px;min-width:0;min-height:0;font-family:Arial,Helvetica,sans-serif}
+.identity-main{padding-top:clamp(40px,13dvh,150px);text-align:right}
+.identity h1{font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:clamp(36px,min(7vw,12dvh),150px);line-height:1.04;letter-spacing:-.07em;margin:0 0 18px}
+.identity h1 span{display:block}
+.identity h1 span+span{font-size:.8em;margin-top:12px}
+.identity .accent{background:#236a47;width:26%;height:8px;margin:0 0 10px auto}
+.identity .descriptor{font:13px/1.5 'Courier New',monospace;letter-spacing:1.5px;margin:0 0 0 auto;width:58%;text-transform:uppercase}
+.portrait{position:absolute;left:24px;bottom:44px;width:40%;height:54%;min-width:0}
+.portrait img{display:block;width:100%;height:100%;object-fit:contain;object-position:left bottom;filter:grayscale(1)}
+.identity .copyright{position:absolute;bottom:19px;left:24px;font:12px 'Courier New',monospace}
+main section[id]{scroll-margin-top:24px}
+:focus-visible{outline:2px solid #236a47;outline-offset:4px}
+@media(max-width:700px){
+ .portfolio-shell{height:auto;min-height:100dvh}
+ .portfolio-shell>header{height:70px}
+ .layout{height:auto;display:block}
+ .layout>main{overflow:visible}
+ .identity{height:640px;padding:0 22px;border-right:0;border-bottom:1.5px solid #191919}
+ .identity-main{padding-top:48px}
+ .identity h1{font-size:14.8vw;margin-bottom:20px}
+ .identity .descriptor{font-size:12px;letter-spacing:1px}
+ .portrait{left:22px;bottom:22px;width:44%;height:55%}
+ .identity .copyright{display:none}
+ main section[id]{scroll-margin-top:85px}
+}
+@media(min-width:701px) and (max-height:550px){
+ .identity-main{padding-top:25px}
+ .identity h1{font-size:min(6.5vw,11dvh);margin-bottom:12px}
+ .identity .descriptor{font-size:12px}
+ .identity .accent{height:6px;margin-bottom:8px}
+ .portrait{height:49%}
+}
+@media(prefers-reduced-motion:reduce){html,.layout>main{scroll-behavior:auto}*,*::before,*::after{transition-duration:0s!important;animation-duration:0s!important}}
