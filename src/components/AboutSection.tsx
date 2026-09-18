@@ -10,7 +10,7 @@ export function AboutSection() {
         {t.about.eyebrow}
       </span>
 
-      <h2 className="font-syne font-black text-3xl sm:text-4xl md:text-5xl text-[#191919] leading-[1.08] tracking-tight mb-8 whitespace-pre-line">
+      <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-[#191919] leading-[1.08] tracking-tight mb-8 whitespace-pre-line">
         {t.about.title}
       </h2>
 

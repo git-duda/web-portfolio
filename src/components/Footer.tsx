@@ -6,7 +6,14 @@ export function Footer() {
 
   const scrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth';
+    const content = document.getElementById('conteudo');
+    content?.scrollTo({ top: 0, left: 0, behavior });
+    window.scrollTo({ top: 0, left: 0, behavior });
+    const focusTarget = window.matchMedia('(min-width: 701px)').matches
+      ? content : document.querySelector<HTMLElement>('header a');
+    focusTarget?.focus({ preventScroll: true });
+    window.history.replaceState(null, '', '#inicio');
   };
 
   return (
@@ -18,7 +25,7 @@ export function Footer() {
       </span>
 
       <a
-        href="#sobre"
+        href="#inicio"
         onClick={scrollToTop}
         className="inline-flex items-center gap-1 font-bold uppercase tracking-wider text-[#191919] hover:text-[#236a47] border-b border-[#191919] hover:border-[#236a47] pb-0.5 transition-colors"
       >

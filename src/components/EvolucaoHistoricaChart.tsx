@@ -64,7 +64,7 @@ export function EvolucaoHistoricaChart() {
           <span className="font-mono-custom text-[11px] uppercase tracking-widest text-[#236a47] block">
             Série Temporal (1994 — 2026)
           </span>
-          <h4 className="font-syne font-bold text-base text-[#191919]">
+          <h4 className="font-heading font-bold text-base text-[#191919]">
             Evolução Histórica Comparada
           </h4>
         </div>

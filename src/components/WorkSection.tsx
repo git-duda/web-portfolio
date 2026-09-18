@@ -24,7 +24,7 @@ export function WorkSection() {
                 <span className="font-bold leading-tight">
                   {language === 'pt' ? <>INDICADORES<br />DE EFETIVIDADE</> : <>EFFECTIVENESS<br />INDICATORS</>}
                 </span>
-                <span className="chart-no font-syne text-2xl font-black text-[#191919]">01</span>
+                <span className="chart-no font-heading text-2xl font-black text-[#191919]">01</span>
               </div>
 
               <div className="py-2">
@@ -58,7 +58,7 @@ export function WorkSection() {
 
             <div className="caption flex items-end justify-between gap-4">
               <div>
-                <h2 className="font-syne font-bold text-2xl md:text-3xl text-[#191919] tracking-tight">
+                <h2 className="font-heading font-bold text-2xl md:text-3xl text-[#191919] tracking-tight">
                   {language === 'pt' ? '01 — Clareza para decidir' : '01 — Clarity to decide'}
                 </h2>
                 <p className="font-mono-custom text-xs md:text-sm text-[#555] mt-1">
@@ -75,7 +75,7 @@ export function WorkSection() {
           </summary>
 
           <div className="detail example-content p-6 md:p-8 bg-[#f8f6ec] space-y-6">
-            <h3 className="example-title font-syne font-bold text-xl md:text-2xl text-[#191919]">
+            <h3 className="example-title font-heading font-bold text-xl md:text-2xl text-[#191919]">
               {language === 'pt' ? 'Progresso das cargas' : 'Workload progress'}
             </h3>
             <ProgressoCargasDashboard />
@@ -150,7 +150,7 @@ export function WorkSection() {
                 <span className="font-bold leading-tight">
                   {language === 'pt' ? <>QUANTO VALIA?<br />PODER DE COMPRA</> : <>WHAT WAS IT WORTH?<br />PURCHASING POWER</>}
                 </span>
-                <span className="chart-no font-syne text-2xl font-black text-[#191919]">02</span>
+                <span className="chart-no font-heading text-2xl font-black text-[#191919]">02</span>
               </div>
 
               <div className="py-2">
@@ -164,7 +164,7 @@ export function WorkSection() {
 
             <div className="caption flex items-end justify-between gap-4">
               <div>
-                <h2 className="font-syne font-bold text-2xl md:text-3xl text-[#191919] tracking-tight">
+                <h2 className="font-heading font-bold text-2xl md:text-3xl text-[#191919] tracking-tight">
                   {language === 'pt' ? '02 — Dados que contam histórias' : '02 — Data that tells stories'}
                 </h2>
                 <p className="font-mono-custom text-xs md:text-sm text-[#555] mt-1">
@@ -182,7 +182,7 @@ export function WorkSection() {
 
           <div className="detail example-content p-6 md:p-8 bg-[#f8f6ec] space-y-12">
             <div className="example-section border-b border-[#191919]/30 pb-10">
-              <h3 className="example-title font-syne font-bold text-xl md:text-2xl text-[#191919] mb-4">
+              <h3 className="example-title font-heading font-bold text-xl md:text-2xl text-[#191919] mb-4">
                 {language === 'pt' ? 'Comparação de poder de compra' : 'Purchasing power comparison'}
               </h3>
               <QuantoValiaInteractive />
@@ -240,7 +240,7 @@ export function WorkSection() {
               </div>
             </div>
             <div className="example-section">
-              <h3 className="example-title font-syne font-bold text-xl md:text-2xl text-[#191919] mb-4">
+              <h3 className="example-title font-heading font-bold text-xl md:text-2xl text-[#191919] mb-4">
                 {language === 'pt' ? 'Evolução histórica' : 'Historical evolution'}
               </h3>
               <EvolucaoHistoricaChart />

@@ -76,7 +76,7 @@ export function QuantoValiaInteractive() {
           <span className="font-mono-custom text-[11px] uppercase tracking-widest text-[#236a47] block font-bold">
             {language === 'pt' ? 'Interface Demonstrativa' : 'Demonstration Interface'}
           </span>
-          <h4 className="font-syne font-bold text-lg text-[#191919]">
+          <h4 className="font-heading font-bold text-lg text-[#191919]">
             {language === 'pt' ? 'Quanto valia? — Calculadora de Poder de Compra' : 'Quanto Valia? — Purchasing Power Calculator'}
           </h4>
         </div>
@@ -178,7 +178,7 @@ export function QuantoValiaInteractive() {
           <span className="block text-[11px] font-mono-custom uppercase text-[#666] mb-1">
             {language === 'pt' ? 'Tempo de Trabalho' : 'Labor Time Required'}
           </span>
-          <div className="font-syne text-xl font-bold text-[#191919]">
+          <div className="font-heading text-xl font-bold text-[#191919]">
             {hoursA.toFixed(0)}h <span className="text-xs font-mono-custom text-[#666]">→</span> {hoursB.toFixed(0)}h
           </div>
           <span className="text-[10px] font-mono-custom text-[#236a47] block mt-1">
@@ -192,7 +192,7 @@ export function QuantoValiaInteractive() {
           <span className="block text-[11px] font-mono-custom uppercase text-[#666] mb-1">
             {language === 'pt' ? 'Unidades por Salário' : 'Units per Minimum Wage'}
           </span>
-          <div className="font-syne text-xl font-bold text-[#191919]">
+          <div className="font-heading text-xl font-bold text-[#191919]">
             {unitsA.toFixed(1)} un <span className="text-xs font-mono-custom text-[#666]">→</span> {unitsB.toFixed(1)} un
           </div>
           <span className="text-[10px] font-mono-custom text-[#236a47] block mt-1">
@@ -206,7 +206,7 @@ export function QuantoValiaInteractive() {
           <span className="block text-[11px] font-mono-custom uppercase text-[#666] mb-1">
             {language === 'pt' ? 'Correção pelo IPCA' : 'IPCA Inflation Adjusted'}
           </span>
-          <div className="font-syne text-xl font-bold text-[#191919]">
+          <div className="font-heading text-xl font-bold text-[#191919]">
             R$ {priceACorrected.toFixed(2)}
           </div>
           <span

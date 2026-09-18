@@ -58,7 +58,7 @@ export function ProgressoCargasDashboard() {
           <span className="font-mono-custom text-[11px] uppercase tracking-widest text-[#236a47] block">
             Monitoramento de Cargas — 45 Dias
           </span>
-          <h4 className="font-syne font-bold text-lg text-[#191919]">
+          <h4 className="font-heading font-bold text-lg text-[#191919]">
             Progresso das Cargas por Frente de Monitoramento
           </h4>
         </div>
@@ -66,22 +66,22 @@ export function ProgressoCargasDashboard() {
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
         <div className="p-3 border border-[#191919] bg-white/70">
           <span className="block text-[11px] font-mono-custom uppercase text-[#666]">Volume Total</span>
-          <div className="font-syne text-xl font-bold text-[#191919]">19.320</div>
+          <div className="font-heading text-xl font-bold text-[#191919]">19.320</div>
           <span className="text-[10px] font-mono-custom text-[#236a47]">alertas processados</span>
         </div>
         <div className="p-3 border border-[#191919] bg-white/70">
           <span className="block text-[11px] font-mono-custom uppercase text-[#666]">Efetividade</span>
-          <div className="font-syne text-xl font-bold text-[#236a47]">97.8%</div>
+          <div className="font-heading text-xl font-bold text-[#236a47]">97.8%</div>
           <span className="text-[10px] font-mono-custom text-[#555]">dentro dos padrões</span>
         </div>
         <div className="p-3 border border-[#191919] bg-white/70">
           <span className="block text-[11px] font-mono-custom uppercase text-[#666]">Prazo de Entrega</span>
-          <div className="font-syne text-xl font-bold text-[#191919]">45 Dias</div>
+          <div className="font-heading text-xl font-bold text-[#191919]">45 Dias</div>
           <span className="text-[10px] font-mono-custom text-[#236a47]">meta 100% atingida</span>
         </div>
         <div className="p-3 border border-[#191919] bg-white/70">
           <span className="block text-[11px] font-mono-custom uppercase text-[#666]">Frentes Ativas</span>
-          <div className="font-syne text-xl font-bold text-[#191919]">4 Áreas</div>
+          <div className="font-heading text-xl font-bold text-[#191919]">4 Áreas</div>
           <span className="text-[10px] font-mono-custom text-[#555]">Bolsa, Balcão, Trade, Cripto</span>
         </div>
       </div>

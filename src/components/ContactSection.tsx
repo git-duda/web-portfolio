@@ -168,7 +168,7 @@ export function ContactSection() {
         {t.contact.eyebrow}
       </span>
 
-      <h2 className="font-syne font-black text-3xl sm:text-4xl md:text-5xl text-[#191919] leading-[1.08] tracking-tight mb-6 whitespace-pre-line">
+      <h2 className="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-[#191919] leading-[1.08] tracking-tight mb-6 whitespace-pre-line">
         {t.contact.title}
       </h2>
       <div className="mb-8">
@@ -191,7 +191,7 @@ export function ContactSection() {
               ✓
             </span>
             <div>
-              <h3 className="font-syne font-bold text-xl text-[#236a47]">
+              <h3 className="font-heading font-bold text-xl text-[#236a47]">
                 {t.contact.success.title}
               </h3>
               <span className="font-mono-custom text-[11px] text-[#555]">
