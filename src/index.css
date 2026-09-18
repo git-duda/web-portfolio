@@ -111,15 +111,20 @@ main section[id]{scroll-margin-top:24px}
 
 @keyframes name-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @keyframes portrait-enter{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
-.identity h1 span{animation:name-enter 950ms cubic-bezier(.22,1,.36,1) both}
-.identity h1 span+span{animation-delay:120ms}
-.identity .portrait img{transform-origin:bottom left;animation:portrait-enter 1250ms cubic-bezier(.22,1,.36,1) 180ms both}
-.identity .descriptor,.identity .accent{animation:name-enter 900ms cubic-bezier(.22,1,.36,1) 260ms both}
+.identity h1 span{animation:name-enter 2400ms cubic-bezier(.22,.61,.36,1) both}
+.identity h1 span+span{animation-delay:180ms}
+.identity .portrait img{transform-origin:bottom left;animation:portrait-enter 2800ms cubic-bezier(.22,.61,.36,1) 200ms both}
+.identity .descriptor,.identity .accent{animation:name-enter 2200ms cubic-bezier(.22,.61,.36,1) 360ms both}
 .scroll-reveal{opacity:0;transform:translateY(22px);transition:opacity 750ms ease,transform 850ms cubic-bezier(.22,1,.36,1)}
 .scroll-reveal.is-revealed,.scroll-reveal:focus-within{opacity:1;transform:translateY(0)}
 .explore-details[open]>.example-content{animation:name-enter 550ms cubic-bezier(.22,1,.36,1) both}
 .explore-details>summary .cover{transition:transform 450ms cubic-bezier(.22,1,.36,1),box-shadow 450ms ease}
-@media(hover:hover){.explore-details>summary:hover .cover{transform:translateY(-3px);box-shadow:0 6px 0 #1919190c}}
+@keyframes clickable-hop{0%,100%{translate:0 0}40%{translate:0 -4px}72%{translate:0 -1px}}
+.portfolio-shell :is(a[href],button:enabled,summary,select:enabled):not([aria-disabled="true"]){cursor:pointer}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .portfolio-shell :is(a[href]:not(.sr-only),button:enabled,summary,select:enabled):not([aria-disabled="true"]):hover{animation:clickable-hop 560ms cubic-bezier(.22,.61,.36,1) both}
+ .explore-details>summary:hover .cover{box-shadow:0 6px 0 #1919190c}
+}
 @media(max-width:700px){.identity h1{font-size:13.6vw}.layout>main .about h2,.layout>main .contact h2{font-size:clamp(1.8rem,7.6vw,2.6rem)}}
 @media(min-width:701px) and (max-height:550px){.identity h1{font-size:min(5.8vw,9.5dvh)}}
 @media(prefers-reduced-motion:reduce){

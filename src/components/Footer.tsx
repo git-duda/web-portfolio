@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useLanguage } from '../context/LanguageContext';
+import { scrollToStart } from '../utils/scrollToStart';
 
 export function Footer() {
   const { t } = useLanguage();
+  const cancelScroll = useRef<(() => void) | null>(null);
+  useEffect(() => () => cancelScroll.current?.(), []);
 
   const scrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth';
-    const content = document.getElementById('conteudo');
-    content?.scrollTo({ top: 0, left: 0, behavior });
-    window.scrollTo({ top: 0, left: 0, behavior });
-    const focusTarget = window.matchMedia('(min-width: 701px)').matches
-      ? content : document.querySelector<HTMLElement>('header a');
-    focusTarget?.focus({ preventScroll: true });
+    cancelScroll.current?.();
+    cancelScroll.current = scrollToStart(() => {
+      const focusTarget = window.matchMedia('(min-width: 701px)').matches
+        ? document.getElementById('conteudo') : document.querySelector<HTMLElement>('header a');
+      focusTarget?.focus({ preventScroll: true });
+    });
     window.history.replaceState(null, '', '#inicio');
   };
 
