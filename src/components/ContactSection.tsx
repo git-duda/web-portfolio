@@ -248,9 +248,6 @@ export function ContactSection() {
               >
                 {t.contact.nameLabel} <span className="text-[#236a47]">*</span>
               </label>
-              {touched.name && !errors.name && formData.name.trim().length >= 2 && (
-                <span className="font-mono-custom text-[11px] text-[#236a47]">✓ Válido</span>
-              )}
             </div>
             <input
               id="contact-name"
@@ -284,9 +281,6 @@ export function ContactSection() {
               >
                 {t.contact.emailInputLabel} <span className="text-[#236a47]">*</span>
               </label>
-              {touched.email && !errors.email && formData.email.trim().length > 0 && (
-                <span className="font-mono-custom text-[11px] text-[#236a47]">✓ Válido</span>
-              )}
             </div>
             <input
               id="contact-email"
@@ -320,9 +314,6 @@ export function ContactSection() {
               >
                 {t.contact.subjectLabel} <span className="text-[#236a47]">*</span>
               </label>
-              {touched.subject && !errors.subject && formData.subject.trim().length >= 2 && (
-                <span className="font-mono-custom text-[11px] text-[#236a47]">✓ Válido</span>
-              )}
             </div>
             <div className="flex flex-wrap gap-1.5 mb-2.5">
               {t.contact.subjects.map((item) => (

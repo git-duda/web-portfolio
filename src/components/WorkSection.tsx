@@ -131,9 +131,19 @@ export function WorkSection() {
                   ? 'A versão demonstrativa utiliza dados locais predefinidos.'
                   : 'Demonstration version leverages pre-configured local simulation data.'}
               </p>
-              <a className="text-link inline-flex items-center gap-1 font-mono-custom text-xs uppercase tracking-wider font-bold border-b border-[#191919] pb-0.5 hover:text-[#236a47] hover:border-[#236a47] transition-colors" href="https://github.com/git-duda/control-dashboard" target="_blank" rel="noopener noreferrer">
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+                <a className="text-link inline-flex items-center gap-1 font-mono-custom text-xs uppercase tracking-wider font-bold border-b border-[#191919] pb-0.5 hover:text-[#236a47] hover:border-[#236a47] transition-colors" href="https://github.com/git-duda/control-dashboard" target="_blank" rel="noopener noreferrer">
                 {language === 'pt' ? 'Conhecer o projeto no GitHub ↗' : 'Explore the project on GitHub ↗'}
               </a>
+                <a
+                  className="text-link inline-flex items-center gap-1 font-mono-custom text-xs uppercase tracking-wider text-[#236a47] font-bold border-b border-[#236a47] pb-0.5 hover:text-[#191919] hover:border-[#191919] transition-colors"
+                  href="https://control-dashboard-lime.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {language === 'pt' ? 'Acessar o site do projeto ↗' : 'Visit the project website ↗'}
+                </a>
+              </div>
             </div>
           </div>
         </details>
@@ -229,7 +239,8 @@ export function WorkSection() {
               </div>
 
               <div className="mt-6">
-                <a
+                <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+                  <a
                   className="text-link inline-flex items-center gap-1 font-mono-custom text-xs uppercase tracking-wider text-[#191919] font-bold border-b border-[#191919] pb-0.5 hover:text-[#236a47] hover:border-[#236a47] transition-colors"
                   href="https://github.com/git-duda/quanto-valia"
                   target="_blank"
@@ -237,6 +248,15 @@ export function WorkSection() {
                 >
                   {language === 'pt' ? 'Conhecer o projeto no GitHub ↗' : 'Explore the project on GitHub ↗'}
                 </a>
+                  <a
+                    className="text-link inline-flex items-center gap-1 font-mono-custom text-xs uppercase tracking-wider text-[#236a47] font-bold border-b border-[#236a47] pb-0.5 hover:text-[#191919] hover:border-[#191919] transition-colors"
+                    href="https://quanto-valia.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {language === 'pt' ? 'Acessar o site do projeto ↗' : 'Visit the project website ↗'}
+                  </a>
+                </div>
               </div>
             </div>
             <div className="example-section">
@@ -282,7 +302,8 @@ export function WorkSection() {
               </div>
 
               <div className="mt-6">
-                <a
+                <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+                  <a
                   className="text-link inline-flex items-center gap-1 font-mono-custom text-xs uppercase tracking-wider text-[#191919] font-bold border-b border-[#191919] pb-0.5 hover:text-[#236a47] hover:border-[#236a47] transition-colors"
                   href="https://github.com/git-duda/quanto-valia"
                   target="_blank"
@@ -290,6 +311,15 @@ export function WorkSection() {
                 >
                   {language === 'pt' ? 'Explorar o código no GitHub ↗' : 'View code on GitHub ↗'}
                 </a>
+                  <a
+                    className="text-link inline-flex items-center gap-1 font-mono-custom text-xs uppercase tracking-wider text-[#236a47] font-bold border-b border-[#236a47] pb-0.5 hover:text-[#191919] hover:border-[#191919] transition-colors"
+                    href="https://quanto-valia.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {language === 'pt' ? 'Acessar o site do projeto ↗' : 'Visit the project website ↗'}
+                  </a>
+                </div>
               </div>
             </div>
           </div>
