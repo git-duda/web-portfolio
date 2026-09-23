@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrazilMapIllustration } from './BrazilMapIllustration';
 import { LaptopGraphic } from './LaptopGraphic';
 import { QuantoValiaInteractive } from './QuantoValiaInteractive';
 import { EvolucaoHistoricaChart } from './EvolucaoHistoricaChart';
@@ -351,6 +352,7 @@ export function WorkSection() {
           </summary>
           <div className="detail example-content p-6 md:p-8 bg-[#f8f6ec] space-y-6">
             <h3 className="example-title font-heading font-bold text-xl md:text-2xl text-[#191919]">{language === 'pt' ? 'Um olhar sobre o Brasil a partir dos dados' : 'A view of Brazil through data'}</h3>
+            <BrazilMapIllustration />
             <p className="project-intro font-mono-custom text-sm text-[#191919] leading-relaxed font-medium">{language === 'pt' ? 'Dashboard desenvolvido no Databricks com dados do Censo 2022, disponibilizados pelo SIDRA/IBGE, para explorar a realidade das mulheres negras no Brasil e apoiar reflexões sobre desigualdades e políticas públicas.' : 'A Databricks dashboard using 2022 Census data from SIDRA/IBGE to explore the lives of Black women in Brazil and inform discussions about inequality and public policy.'}</p>
             <div className="space-y-4 font-sans text-sm md:text-base text-[#191919]/90">
               <div>
@@ -372,6 +374,7 @@ export function WorkSection() {
               <p className="case-note font-mono-custom text-xs text-[#666] italic">{language === 'pt' ? 'Fonte: Censo Demográfico 2022 · SIDRA/IBGE. Tecnologias: Databricks, JavaScript, Vite e Vercel.' : 'Source: 2022 Population Census · SIDRA/IBGE. Technologies: Databricks, JavaScript, Vite, and Vercel.'}</p>
               <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
                 <a className="text-link inline-flex items-center gap-1 font-mono-custom text-xs uppercase tracking-wider font-bold border-b border-[#191919] pb-0.5 hover:text-[#236a47] hover:border-[#236a47] transition-colors" href="https://github.com/git-duda/mulheres-negras-brasil" target="_blank" rel="noopener noreferrer">{language === 'pt' ? 'Conhecer o projeto no GitHub ↗' : 'Explore the project on GitHub ↗'}</a>
+                <a className="text-link inline-flex items-center gap-1 font-mono-custom text-xs uppercase tracking-wider text-[#236a47] font-bold border-b border-[#236a47] pb-0.5 hover:text-[#191919] hover:border-[#191919] transition-colors" href="https://mulheres-negras-brasil.vercel.app/" target="_blank" rel="noopener noreferrer">{language === 'pt' ? 'Acessar o site do projeto ↗' : 'Visit the project website ↗'}</a>
               </div>
             </div>
           </div>
