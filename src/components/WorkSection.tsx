@@ -148,7 +148,7 @@ export function WorkSection() {
           </div>
         </details>
       </article>
-      <article className="skill last:border-b-0">
+      <article className="skill border-b border-[#191919]">
         <details
           className="explore-details group"
           open={openArticle2}
@@ -320,6 +320,58 @@ export function WorkSection() {
                     {language === 'pt' ? 'Acessar o site do projeto ↗' : 'Visit the project website ↗'}
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article className="skill last:border-b-0">
+        <details className="explore-details group">
+          <summary className="p-6 md:p-8 cursor-pointer select-none border-b border-transparent group-open:border-[#191919] transition-colors hover:bg-black/[0.02]">
+            <figure className="cover chart-cover border border-[#191919] bg-[#f8f6ec] p-4 sm:p-6 mb-6">
+              <div className="chart-top flex items-start justify-between gap-4 border-b border-[#191919] pb-3 mb-4 font-mono-custom text-xs uppercase tracking-wider">
+                <span className="font-bold leading-tight">{language === 'pt' ? <>MULHERES NEGRAS<br />NO BRASIL</> : <>BLACK WOMEN<br />IN BRAZIL</>}</span>
+                <span className="chart-no font-heading text-2xl font-black text-[#191919]">03</span>
+              </div>
+              <div className="py-6 sm:py-10">
+                <p className="font-mono-custom text-xs uppercase tracking-widest text-[#236a47]">{language === 'pt' ? 'Censo demográfico' : 'Population census'}</p>
+                <p className="font-heading text-6xl sm:text-7xl font-bold tracking-tight text-[#236a47] mt-3">2022</p>
+                <p className="font-mono-custom text-sm leading-relaxed text-[#555] mt-4 max-w-sm">{language === 'pt' ? 'Dados públicos para compreender desigualdades de raça e gênero.' : 'Public data to understand racial and gender inequalities.'}</p>
+              </div>
+              <figcaption className="text-right font-mono-custom text-[10px] tracking-widest uppercase text-[#555] border-t border-[#191919]/20 pt-2 mt-2">SIDRA / IBGE · DATABRICKS</figcaption>
+            </figure>
+            <div className="caption flex items-end justify-between gap-4">
+              <div>
+                <h2 className="font-heading font-bold text-2xl md:text-3xl text-[#191919] tracking-tight">{language === 'pt' ? '03 — Mulheres Negras no Brasil' : '03 — Black Women in Brazil'}</h2>
+                <p className="font-mono-custom text-xs md:text-sm text-[#555] mt-1">{language === 'pt' ? 'Indicadores sociais e visualização de dados públicos' : 'Social indicators and public data visualization'}</p>
+              </div>
+              <span className="arrow font-mono-custom text-2xl md:text-3xl text-[#191919] transition-transform duration-200 group-open:rotate-45" aria-hidden="true">↗</span>
+            </div>
+          </summary>
+          <div className="detail example-content p-6 md:p-8 bg-[#f8f6ec] space-y-6">
+            <h3 className="example-title font-heading font-bold text-xl md:text-2xl text-[#191919]">{language === 'pt' ? 'Um olhar sobre o Brasil a partir dos dados' : 'A view of Brazil through data'}</h3>
+            <p className="project-intro font-mono-custom text-sm text-[#191919] leading-relaxed font-medium">{language === 'pt' ? 'Dashboard desenvolvido no Databricks com dados do Censo 2022, disponibilizados pelo SIDRA/IBGE, para explorar a realidade das mulheres negras no Brasil e apoiar reflexões sobre desigualdades e políticas públicas.' : 'A Databricks dashboard using 2022 Census data from SIDRA/IBGE to explore the lives of Black women in Brazil and inform discussions about inequality and public policy.'}</p>
+            <div className="space-y-4 font-sans text-sm md:text-base text-[#191919]/90">
+              <div>
+                <h4 className="font-mono-custom font-bold text-xs uppercase tracking-widest text-[#236a47] mb-1">{language === 'pt' ? 'O problema' : 'The problem'}</h4>
+                <p className="leading-relaxed">{language === 'pt' ? 'Transformar dados censitários em uma leitura acessível das desigualdades, considerando raça, gênero e território.' : 'Turning census data into an accessible view of inequality across race, gender, and geography.'}</p>
+              </div>
+              <div>
+                <h4 className="font-mono-custom font-bold text-xs uppercase tracking-widest text-[#236a47] mb-1">{language === 'pt' ? 'A solução' : 'The solution'}</h4>
+                <p className="leading-relaxed">{language === 'pt' ? 'Um painel interativo reúne indicadores e comparações em visualizações que facilitam a exploração dos dados. O projeto inclui uma interface web para apresentar o dashboard do Databricks.' : 'An interactive dashboard brings indicators and comparisons together in visualizations that make the data easier to explore. The project includes a web interface for presenting the Databricks dashboard.'}</p>
+              </div>
+              <div>
+                <h4 className="font-mono-custom font-bold text-xs uppercase tracking-widest text-[#236a47] mb-2">{language === 'pt' ? 'Habilidades em prática' : 'Skills in practice'}</h4>
+                <ul className="list-disc list-inside space-y-1 pl-1 font-mono-custom text-xs md:text-sm text-[#191919]/85">
+                  <li>{language === 'pt' ? 'Organização e interpretação de dados públicos.' : 'Organization and interpretation of public data.'}</li>
+                  <li>{language === 'pt' ? 'Construção de dashboards no Databricks.' : 'Dashboard development in Databricks.'}</li>
+                  <li>{language === 'pt' ? 'Comunicação visual de indicadores sociais.' : 'Visual communication of social indicators.'}</li>
+                </ul>
+              </div>
+              <p className="case-note font-mono-custom text-xs text-[#666] italic">{language === 'pt' ? 'Fonte: Censo Demográfico 2022 · SIDRA/IBGE. Tecnologias: Databricks, JavaScript, Vite e Vercel.' : 'Source: 2022 Population Census · SIDRA/IBGE. Technologies: Databricks, JavaScript, Vite, and Vercel.'}</p>
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+                <a className="text-link inline-flex items-center gap-1 font-mono-custom text-xs uppercase tracking-wider font-bold border-b border-[#191919] pb-0.5 hover:text-[#236a47] hover:border-[#236a47] transition-colors" href="https://github.com/git-duda/mulheres-negras-brasil" target="_blank" rel="noopener noreferrer">{language === 'pt' ? 'Conhecer o projeto no GitHub ↗' : 'Explore the project on GitHub ↗'}</a>
               </div>
             </div>
           </div>
